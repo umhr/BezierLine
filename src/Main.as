@@ -3,12 +3,13 @@ package
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import jp.mztm.ribon.RibonCanvas;
-	import net.hires.debug.Stats;
+	//import net.hires.debug.Stats;
 	
 	/**
 	 * ...
 	 * @author umhr
 	 */
+	[SWF(width = 1024, height = 768, backgroundColor = 0x000000, frameRate = 60)]
 	public class Main extends Sprite 
 	{
 		
@@ -28,7 +29,7 @@ package
 			// entry point
 			
 			this.addChild(new Canvas());
-			this.addChild(new Stats());
+			//this.addChild(new Stats());
 		}
 		
 	}

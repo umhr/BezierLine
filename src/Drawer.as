@@ -43,8 +43,10 @@ package
             removeEventListener(Event.ADDED_TO_STAGE, init);
             // entry point
             
-            _bitmap = new Bitmap(new BitmapData(stage.stageWidth, stage.stageHeight, false, 0x000000), "auto", true);
-            _bitmapParticle = new Bitmap(new BitmapData(stage.stageWidth, stage.stageHeight, true, 0x000000));
+            //_bitmap = new Bitmap(new BitmapData(stage.stageWidth, stage.stageHeight, false, 0x000000), "auto", true);
+            //_bitmapParticle = new Bitmap(new BitmapData(stage.stageWidth, stage.stageHeight, true, 0x000000));
+            _bitmap = new Bitmap(new BitmapData(1024, 768, false, 0x000000), "auto", true);
+            _bitmapParticle = new Bitmap(new BitmapData(1024, 768, true, 0x000000));
             this.addChild(_bitmap);
             this.addChild(_bitmapParticle);
 			
